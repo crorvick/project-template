@@ -11,3 +11,11 @@ AC_CONFIG_FILES([Makefile src/Makefile])
 
 AC_OUTPUT
 
+echo \
+"------------------------------------------------
+${PACKAGE_NAME} Version ${PACKAGE_VERSION}
+
+Prefix        : ${prefix}
+Compiler      : ${CC} ${CFLAGS} ${CPPFLAGS}
+Linker        : ${LD} ${LDFLAGS} ${LIBS}
+------------------------------------------------"
